@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		457C398C25090F2C00538D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C398B25090F2C00538D1C /* AppDelegate.swift */; };
 		457C398E25090F2C00538D1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C398D25090F2C00538D1C /* SceneDelegate.swift */; };
-		457C399025090F2C00538D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C398F25090F2C00538D1C /* ViewController.swift */; };
+		457C399025090F2C00538D1C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C398F25090F2C00538D1C /* InfoViewController.swift */; };
 		457C399325090F2C00538D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457C399125090F2C00538D1C /* Main.storyboard */; };
 		457C399525090F2F00538D1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457C399425090F2F00538D1C /* Assets.xcassets */; };
 		457C399825090F2F00538D1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457C399625090F2F00538D1C /* LaunchScreen.storyboard */; };
+		457C39A72509156600538D1C /* DataManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39A62509156600538D1C /* DataManeger.swift */; };
+		457C39A92509167E00538D1C /* PersonaListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39A82509167E00538D1C /* PersonaListTableViewController.swift */; };
+		457C39AB250916B200538D1C /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39AA250916B200538D1C /* ContactsTableViewController.swift */; };
+		457C39AD25091A0600538D1C /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39AC25091A0600538D1C /* PersonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		457C398825090F2C00538D1C /* Contact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457C398B25090F2C00538D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457C398D25090F2C00538D1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		457C398F25090F2C00538D1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		457C398F25090F2C00538D1C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		457C399225090F2C00538D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		457C399425090F2F00538D1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457C399725090F2F00538D1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		457C399925090F2F00538D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457C39A62509156600538D1C /* DataManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManeger.swift; sourceTree = "<group>"; };
+		457C39A82509167E00538D1C /* PersonaListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaListTableViewController.swift; sourceTree = "<group>"; };
+		457C39AA250916B200538D1C /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		457C39AC25091A0600538D1C /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		457C398A25090F2C00538D1C /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				457C398B25090F2C00538D1C /* AppDelegate.swift */,
-				457C398D25090F2C00538D1C /* SceneDelegate.swift */,
-				457C398F25090F2C00538D1C /* ViewController.swift */,
-				457C399125090F2C00538D1C /* Main.storyboard */,
-				457C399425090F2F00538D1C /* Assets.xcassets */,
-				457C399625090F2F00538D1C /* LaunchScreen.storyboard */,
-				457C399925090F2F00538D1C /* Info.plist */,
+				457C39A52509153300538D1C /* Models */,
+				457C39A22509101B00538D1C /* ViewControllers */,
+				457C39A025090FE100538D1C /* Storybords */,
+				457C399F25090F8D00538D1C /* Sources */,
+				457C39A12509100A00538D1C /* SupportingFiles */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		457C399F25090F8D00538D1C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				457C399425090F2F00538D1C /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		457C39A025090FE100538D1C /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				457C399125090F2C00538D1C /* Main.storyboard */,
+				457C399625090F2F00538D1C /* LaunchScreen.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		457C39A12509100A00538D1C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				457C398B25090F2C00538D1C /* AppDelegate.swift */,
+				457C398D25090F2C00538D1C /* SceneDelegate.swift */,
+				457C399925090F2F00538D1C /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		457C39A22509101B00538D1C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				457C39A82509167E00538D1C /* PersonaListTableViewController.swift */,
+				457C398F25090F2C00538D1C /* InfoViewController.swift */,
+				457C39AA250916B200538D1C /* ContactsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		457C39A52509153300538D1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				457C39A62509156600538D1C /* DataManeger.swift */,
+				457C39AC25091A0600538D1C /* PersonModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457C399025090F2C00538D1C /* ViewController.swift in Sources */,
+				457C399025090F2C00538D1C /* InfoViewController.swift in Sources */,
+				457C39AD25091A0600538D1C /* PersonModel.swift in Sources */,
+				457C39A72509156600538D1C /* DataManeger.swift in Sources */,
 				457C398C25090F2C00538D1C /* AppDelegate.swift in Sources */,
+				457C39A92509167E00538D1C /* PersonaListTableViewController.swift in Sources */,
 				457C398E25090F2C00538D1C /* SceneDelegate.swift in Sources */,
+				457C39AB250916B200538D1C /* ContactsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Contact/Info.plist;
+				INFOPLIST_FILE = Contact/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goWhites.Contact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Contact/Info.plist;
+				INFOPLIST_FILE = Contact/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goWhites.Contact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
