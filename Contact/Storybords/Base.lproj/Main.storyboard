@@ -116,7 +116,7 @@
         <scene sceneID="AWS-iR-Rdo">
             <objects>
                 <navigationController id="fjz-Fw-17i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="person.3" catalog="system" selectedImage="person.3" id="jBI-aG-qha"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.3" catalog="system" id="jBI-aG-qha"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XVL-0Q-wh3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

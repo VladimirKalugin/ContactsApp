@@ -5,29 +5,25 @@
 //  Created by Fuhrer_SS on 09.09.2020.
 //  Copyright © 2020 myself. All rights reserved.
 //
-
 import UIKit
 
 class PersonaListTableViewController: UITableViewController {
 
+    let contactList = DataManager.getContactsList().sorted()
     
     
-    private let contactList = DataManager.getContactsList().sorted(by: <)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationItem.title = "Persons List"
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return contactList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellContact", for: indexPath)
         
@@ -36,12 +32,7 @@ class PersonaListTableViewController: UITableViewController {
         return cell
     }
     
-
-
-    
     // MARK: - Navigation
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let infoVC = segue.destination as? InfoViewController
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -49,6 +40,6 @@ class PersonaListTableViewController: UITableViewController {
         infoVC?.emailAdress = contactList[indexPath.row].email
         infoVC?.fullName = contactList[indexPath.row].name + " " + contactList[indexPath.row].lastname
     }
-    
-
 }
+
+
