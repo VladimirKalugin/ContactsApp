@@ -17,6 +17,7 @@
 		457C39A92509167E00538D1C /* PersonaListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39A82509167E00538D1C /* PersonaListTableViewController.swift */; };
 		457C39AB250916B200538D1C /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39AA250916B200538D1C /* ContactsTableViewController.swift */; };
 		457C39AD25091A0600538D1C /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457C39AC25091A0600538D1C /* PersonModel.swift */; };
+		4586130C250D031300A16B20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586130B250D031300A16B20 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		457C39A82509167E00538D1C /* PersonaListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonaListTableViewController.swift; sourceTree = "<group>"; };
 		457C39AA250916B200538D1C /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		457C39AC25091A0600538D1C /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		4586130B250D031300A16B20 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				457C39A82509167E00538D1C /* PersonaListTableViewController.swift */,
 				457C398F25090F2C00538D1C /* InfoViewController.swift */,
 				457C39AA250916B200538D1C /* ContactsTableViewController.swift */,
+				4586130B250D031300A16B20 /* TabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				457C399025090F2C00538D1C /* InfoViewController.swift in Sources */,
+				4586130C250D031300A16B20 /* TabBarController.swift in Sources */,
 				457C39AD25091A0600538D1C /* PersonModel.swift in Sources */,
 				457C39A72509156600538D1C /* DataManeger.swift in Sources */,
 				457C398C25090F2C00538D1C /* AppDelegate.swift in Sources */,

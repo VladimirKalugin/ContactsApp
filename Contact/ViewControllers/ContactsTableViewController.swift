@@ -13,25 +13,23 @@ import UIKit
 //}
 
 class ContactsTableViewController: UITableViewController {
-
-    private let contactList = DataManager.getContactsList().sorted()
     
+    var persons: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Contact List"
+        title = "Contact List"
     }
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         
-        return contactList.count
+        return persons.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let nameOfContact: String
-        nameOfContact = contactList[section].name + " " + contactList[section].lastname
+        let nameOfContact = persons[section].fullname
         return nameOfContact
     }
 
@@ -43,12 +41,12 @@ class ContactsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "infoContact", for: indexPath)
         if indexPath.row == 0 {
-            let phone = contactList[indexPath.section].phoneNumber
+            let phone = persons[indexPath.section].phoneNumber
             cell.textLabel?.text = phone
             cell.imageView?.image = UIImage(systemName: "phone")
             return cell
         } else {
-            let email = contactList[indexPath.section].email
+            let email = persons[indexPath.section].email
             cell.textLabel?.text = email
             cell.imageView?.image = UIImage(systemName: "envelope")
             return cell
@@ -56,8 +54,3 @@ class ContactsTableViewController: UITableViewController {
     }
 }
 
-//extension ContactsTableViewController: CopyPersonsArray {
-//    func takePersonsArray(_: [Person]) -> [Person] {
-//        contactList
-//    }
-//}
